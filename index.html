@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Login Form</title>
+  <!-- Favicons -->
+  <link href="assets/img/apple-touch-icon.png" rel="icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="loginstyle.css">
+    <script>
+      function validate()
+      {
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+
+        if (username=="komal" && password=="25@pr!l2022")
+        {
+          
+          location.replace("web.html");
+          
+        }
+        else {
+          alert("Login Failed");
+        }
+      }
+    </script>
+</head>
+  <body style="background-image: url('assets/img/bg.webp'); ">
+    <center><img src="assets/img/2.png" alt="" style="height: 320px; width: 30%; "></center>
+    <div class="login-form">
+      
+     <!-- <form class="box" method="post"> -->
+        <input type="text" name="" placeholder="Username" id="username"required>
+        <input type="password" name="" placeholder="Password" id="password"required>
+        <center><button type="submit" name="" value="Login" onclick="validate()">Submit</button></center>
+      <!--</form>-->
+    </div>
+  </body>
+</html>
