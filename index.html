@@ -6,8 +6,8 @@
   <link href="assets/img/apple-touch-icon.png" rel="icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="stylesheet" type="text/css" href="loginstyle.css">
-    
-    <!-- Vendor CSS Files -->
+
+  <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -33,15 +33,33 @@
       }
     </script>
 </head>
-  <body style="background-image: url('assets/img/bg.webp'); ">
-    <center><img src="assets/img/2.png" alt="" style="height: 320px; width: 30%; "></center>
-    <div class="login-form">
+  <body >
+
+    <div class="container-fixed"  style="background-image: url('assets/img/bg.webp'); height: 720px;width: 100%;">
       
-     <!-- <form class="box" method="post"> -->
-        <input type="text" name="" placeholder="Username" id="username"required>
-        <input type="password" name="" placeholder="Password" id="password"required>
-        <center><button type="submit" name="" value="Login" onclick="validate()">Submit</button></center>
-      <!--</form>-->
+      <!-- <center>  -->
+        <div class="col-md-12">
+          <center><img src="assets/img/2.png" alt="" style="height: 350px; width: 30%; " ></center>
+      <div class="login-form" style="margin-top: 50px;">
+        
+        <div class="col-md-12 ">
+          <input type="text" name="" placeholder="Username" id="username"required>
+        </div>
+        <div class="col-md-12 ">
+          <input type="password" name="" placeholder="Password" id="password"required>
+        </div>
+        <div class="col-md-12 "style="margin-top: 10px;">
+          <center><button type="submit" name="" value="Login" onclick="validate()">Login</button></center>
+        </div>
+      </div>
+    
+  <!-- </center> -->
     </div>
+    <!-- <div class="login-form">
+      
+      <form class="box" method="post"> 
+        
+     </form>
+    </div> -->
   </body>
 </html>
